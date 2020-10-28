@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #box{
+            height: 1000px;
+            width:100%;
+            background-color: #000;
+            margin: 0 auto;
+
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box" onclick="f()">
+</div>
+
+<script>
+    setInterval(f,1);
+
+    var colors = ["Red","orange","yellow","green","blue","indigo","purple"];
+    function f() {
+        var box = document.getElementById("box");
+            var num = Math.floor(Math.random(6)*10);
+            color = colors[num];
+            box.style.backgroundColor = colors[num];
+    }
+
+
+</script>
+
+</body>
+</html> 
